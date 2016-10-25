@@ -5,10 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#257"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.msrabon.rockpaperscissorsgame.MainActivity">
 
     <LinearLayout
@@ -45,26 +41,26 @@
             android:id="@+id/txt_player_one_score" />
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
             <Button
-                android:layout_width="40dp"
+                android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:background="@mipmap/img_paper"
                 android:id="@+id/btn_p1_paper" />
 
             <Button
-                android:layout_width="40dp"
+                android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:background="@mipmap/img_scissors"
                 android:id="@+id/btn_p1_scissors" />
 
             <Button
-                android:layout_width="40dp"
+                android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:background="@mipmap/img_rock"
                 android:elevation="0dp"
@@ -74,9 +70,6 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@mipmap/ic_launcher"
-            android:adjustViewBounds="true"
-            android:cropToPadding="true"
             android:id="@+id/img_view_p1_select" />
 
     </LinearLayout>
@@ -115,26 +108,26 @@
             android:id="@+id/txt_player_two_score" />
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
             <Button
-                android:layout_width="40dp"
+                android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:background="@mipmap/img_paper"
                 android:id="@+id/btn_p2_paper" />
 
             <Button
-                android:layout_width="40dp"
+                android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:background="@mipmap/img_scissors"
                 android:id="@+id/btn_p2_scissors" />
 
             <Button
-                android:layout_width="40dp"
+                android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:background="@mipmap/img_rock"
                 android:id="@+id/btn_p2_rock" />
@@ -143,7 +136,6 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@mipmap/ic_launcher"
             android:id="@+id/img_view_p2_select" />
 
     </LinearLayout>
@@ -151,9 +143,10 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
         android:layout_alignParentBottom="true"
         android:text="Result: "
         android:textColor="#FFF"
-        android:textSize="40sp"
+        android:textSize="30sp"
         android:id="@+id/txt_current_result" />
 </RelativeLayout>
